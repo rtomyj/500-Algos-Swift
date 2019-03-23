@@ -1,39 +1,24 @@
+/*
+	A dict is used to remember a value and the index it was found in the original array.
 
-let numbers = [8, 7, 2, 5, 3, 1].sorted()
-var seenNumbers: [[Int]]! = []
-let sum: Int = 10
-
-func findIndexes(_ numbers: [Int]) -> Dictionary<Int, [Int]>
+	Traverses an array of items and subtracts sum - current value. If that result is in the dict then it means we 
+	iterated over it already and we can print out the sum. 
+*/
+func hashAndFind(_ items: [Int], _ sum: Int)
 {
-	var numDict = [Int:[Int]]()
-	for (index, number) in numbers.enumerated()
+	var hash = [Int: Int]()
+	for (index, item) in items.enumerated()
 	{
-		numDict[number, default:[Int]()].append(index)
-	}
-
-	return numDict
-}
-
-
-var numDict = findIndexes(numbers)
-
-for (posA, numA) in numbers.enumerated()
-{
-	let numB: Int = sum - numA
-	if let positionsForB = numDict[numB]
-	{
-		for posB in positionsForB
+		hash[item] = index
+		let operand = sum - item
+		let hashIndex = hash[operand]
+		if (hashIndex != nil)
 		{
-			if posA != posB && (!seenNumbers.contains([numA, numB]) || !seenNumbers.contains([numB, numA]))
-			{
-				print("\(numA) + \(numB) = \(sum)")
-				seenNumbers.append([numA, numB])
-				seenNumbers.append([numB, numA])
-			}
-
+			print("\(item) (index = \(index)) + \(operand) (index = \(hashIndex!)) = \(sum)")
 		}
-
 	}
 }
 
-
+let items = [8, 7, 2, 5, 3, 1]
+let sum = 10
+hashAndFind(items, sum)

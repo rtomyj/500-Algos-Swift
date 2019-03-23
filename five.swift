@@ -1,4 +1,9 @@
-func hashAndFind(_ items: [Int])
+/*
+	Uses a dict to keep track of number occurrences. If dict has a key then it means the value was seen before in items array (dup).
+	
+	Not constant space. O(N) complexity.
+*/
+func hashAndGrab(_ items: [Int])
 {
 	var hash = [Int: Bool?]()
 
@@ -6,7 +11,7 @@ func hashAndFind(_ items: [Int])
 	{
 		if (hash[item] != nil)
 		{
-			print("Dup value is \(item)")
+			print("Dup element is \(item)")
 			break
 		}
 		else
@@ -16,6 +21,12 @@ func hashAndFind(_ items: [Int])
 	}
 }
 
+
+/*
+	Array is sorted. After which the adjacent elements are checked. Sorted adjacent elements are either dups or not.
+
+	Constant Sapce O(N).
+*/
 func sortAndfind(_ items: [Int])
 {
 	let sortedItems = items.sorted()
@@ -23,14 +34,14 @@ func sortAndfind(_ items: [Int])
 	{
 		if (value == sortedItems[index])
 		{
-			print("Dup value is \(value)")
+			print("Dup element is \(value)")
 			return
 		}
 	}
 }
 
-let items = [1, 2, 3, 4, 4]
-//let items = [1, 2, 3, 4, 2]
+var items = [1, 2, 3, 4, 2]
+hashAndGrab(items)
 
-//hashAndFind(items)
+items = [1, 2, 3, 4, 4]
 sortAndfind(items)
