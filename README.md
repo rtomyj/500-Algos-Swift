@@ -1,4 +1,6 @@
-# Algorithms can be found here: https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions?srid=hOqIb
+# 500 Algorithm Challenge
+
+Algorithms can be found here: https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions?srid=hOqIb
 
 ## Arrays
 
