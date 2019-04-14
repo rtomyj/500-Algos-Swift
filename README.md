@@ -1,34 +1,34 @@
-Algorithms can be found here: https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions?srid=hOqIb
+# Algorithms can be found here: https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions?srid=hOqIb
 
-# Arrays
+## Arrays
 
-#### **1. Find pair with given sum in the array**
+### **1. Find pair with given sum in the array**
 
 Find a sum of two numbers in an unordered array.
 
-#### **2. Check if subarray with 0 sum is exists or not**
+### **2. Check if subarray with 0 sum is exists or not**
 
-#### **3. Print all sub-arrays with 0 sum**
+### **3. Print all sub-arrays with 0 sum**
 
-#### **4. Sort binary array in linear time**
+### **4. Sort binary array in linear time**
 
 Sort binary array in constant space and in linear time (will provide a constant space soln and non constant space soln)
 
-#### **5. Find a duplicate element in a limited range array**
+### **5. Find a duplicate element in a limited range array**
 
 Find dup value in an array of size n. There will only be one dup value.
 
-#### **6. Find largest sub-array formed by consecutive integers**
+### **6. Find largest sub-array formed by consecutive integers**
 
-#### **7. Find maximum length sub-array having given sum**
+### **7. Find maximum length sub-array having given sum**
 
-#### **8. Find maximum length sub-array having equal number of 0's and 1's**
+### **8. Find maximum length sub-array having equal number of 0's and 1's**
 
-#### **9. Sort an array containing 0's, 1's and 2's (Dutch national flag problem)**
+### **9. Sort an array containing 0's, 1's and 2's (Dutch national flag problem)**
 
 Given an array of 0's, 1's and 2's - sort the array in linear time and with constant space.
 
-#### **10. Inplace merge two sorted arrays**
+### **10. Inplace merge two sorted arrays**
 
 Given two individually sorted arrays, sort arrays so one array has all elements that are less than all elements in the second array and both arrays are sorted.
 
@@ -36,7 +36,7 @@ Eg. [1, 3, 5] [2, 4]
 
 Becomes [1, 2, 3] [4, 5]
 
-#### **11. Merge two arrays by satisfying given constraints**
+### **11. Merge two arrays by satisfying given constraints**
 
 Given two sorted arrays x and y where x has a size of M and y has a size of N and x has exactly N vacant spots, merge the two arrays.
 
