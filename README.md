@@ -24,6 +24,8 @@ Find dup value in an array of size n. There will only be one dup value.
 
 ### **7. Find maximum length sub-array having given sum**
 
+For an array of integers, find the sub array with the most sequential values that also produces a given sum.
+
 ### **8. Find maximum length sub-array having equal number of 0's and 1's**
 
 Given an array of only 0's and 1's, find a sub array with the greatest number of elements where the number of 0's and 1's is the same. Bonus - do it in linear time.
