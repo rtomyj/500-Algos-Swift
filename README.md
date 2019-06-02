@@ -8,9 +8,13 @@ Algorithms can be found here: https://techiedelight.quora.com/500-Data-Structure
 
 Find a sum of two numbers in an unordered array.
 
-### **2. Check if subarray with 0 sum is exists or not**
+### **2. Find a subarray with 0 sum**
+
+Find a subarray that when all elements are added the result is 0. EG) [0], [7, -7]
 
 ### **3. Print all sub-arrays with 0 sum**
+
+Find all subarrays with 0 sum. Similar to number 2.
 
 ### **4. Sort binary array in linear time**
 
