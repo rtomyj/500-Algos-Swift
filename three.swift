@@ -72,7 +72,10 @@
 	However, Graph 2 only considers the sub array [2 -2], so [0, 2) for Graph 2 is equal to [2, -2]
 */
 
-func findZeroSum(_ items: [Int]) -> [[Int]]
+/*
+	Finds all sub array with zero sum for a given sequence and returns an array of arrays with all sub arrays.
+*/
+func getZeroSums(_ items: [Int]) -> [[Int]]
 {
 	var graphs = [Int]()	// each index will be graph X and each value will be sum at given index for graph X (see above)
 	var zeroSums = [[Int]]()	// array holding all sub arrays with 0 graphs
@@ -110,6 +113,6 @@ func findZeroSum(_ items: [Int]) -> [[Int]]
 	return Array(zeroSums)
 }
 
-let items: [Int] = [3, 4, -7, 3, 1, 3, 1, -4, -2, -2]
-let zeroSum = findZeroSum(items)
+let items: [Int] = [0, 3, 4, -7, 3, 1, 3, 1, -4, -2, -2]
+let zeroSum = getZeroSums(items)
 print("All sub arrays with zero graphs: \n", zeroSum)

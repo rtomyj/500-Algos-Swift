@@ -22,7 +22,7 @@
 /*
 	Finds sub array with zero sum for a given sequence and returns it.
 */
-func findZeroSum(_ items: [Int]) -> [Int]
+func getZeroSum(_ items: [Int]) -> [Int]
 {
 	var sum = 0	// running sum of all seen items through traversal
 	var graph = [Int:Int]()	// graph that keeps track of sums and their index - key is y axis (sum) and value is x axis
@@ -50,5 +50,5 @@ func findZeroSum(_ items: [Int]) -> [Int]
 }
 
 let items: [Int] = [3, 4, -7, 3, 1, 3, 1, -4, -2, -2]
-let zeroSum = findZeroSum(items)
+let zeroSum = getZeroSum(items)
 print("Sub array with zero sum: \n", zeroSum)
